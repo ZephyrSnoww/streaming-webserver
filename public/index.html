@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zephyr's Stream Settings</title>
+
+  <link rel="stylesheet" href="/document.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!-- This will get replaced with the actual built frontend (made using svelte) once I finish that up. That's in its own repo, streaming-webserver-frontend -->
+
+  <p>hey man nice try you cant access this yet :3</p>
+
+  <!-- Below is the old static site code that is. bad -->
+
+  <!-- <div id="username-input-container" class="box">
+    <h1>Log In</h1>
+    <input type="text" id="username-input" placeholder="Twitch username">
+    <div id="login-buttons-container">
+      <button id="username-login-button">Log In</button>
+      <button id="username-register-button">Register</button>
+    </div>
+  </div>
+
+  <div id="user-display" class="box">
+    <h1 id="username-display">Logged in as:</h1>
+    <div class="flex">
+      <input type="checkbox" id="protect-account-input">
+      <h2>Password protect account</h2>
+    </div>
+    <div>
+      If your account isn't password protected, anyone can change your settings by putting your Twitch username in.
+    </div>
+  </div>
+
+  <div class="user-settings-container box">
+    <h1>Set Chat Color</h1>
+    <div class="flex mb1">
+      <input type="checkbox" id="color-random">
+      <h2>Random chat color</h2>
+    </div>
+    <input type="color" id="color-input">
+  </div>
+
+  <button id="submit-changes-button">Submit Changes</button>
+
+  <script src="/libraries/jquery.min.js"></script>
+  <script src="/libraries/axios.min.js"></script>
+
+  <script>
+    let username;
+    let user;
+
+    function displaySite() {
+      $('#username-input-container').css('display', 'none');
+      $('#user-display').css('display', 'block');
+      $('.user-settings-container').css('display', 'block');
+
+      updateDisplayedValues();
+    }
+
+    function updateDisplayedValues() {
+      $('#username-display').text(`Logged in as ${username}`);
+
+      if (user.chatColor == 'random') {
+        $('#color-random').val(true);
+      }
+      else {
+        $('#color-input').val(user.chatColor);
+        $('#color-random').val(false);
+      }
+    }
+
+    $('#username-login-button').on('click', (e) => {
+      username = $('#username-input').val();
+
+      axios.get(`/api/users/${username}`).then((res) => {
+        user = res.data;
+        username = user.twitchUsername;
+        console.log(user);
+        displaySite();
+      }).catch((err) => {
+        alert(err);
+      });
+    });
+
+    $('#username-register-button').on('click', (e) => {
+      username = $('#username-input').val();
+
+      axios.post(`/api/users/${username}`).then((res) => {
+        user = res.data;
+        username = user.twitchUsername;
+        console.log(user);
+        displaySite();
+      }).catch((err) => {
+        alert(err);
+      });
+    });
+  </script> -->
+</body>
+
+</html>

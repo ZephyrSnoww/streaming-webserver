@@ -1,0 +1,33 @@
+.box {
+  border: 2px solid black;
+  padding: 1em;
+  box-shadow: -5px 5px 0px black;
+  margin-bottom: 2em;
+}
+
+#user-display, .user-settings-container, #submit-changes-button {
+  display: none;
+}
+
+#login-buttons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.mb05 {
+  margin-bottom: 0.5em;
+}
+
+.mb1 {
+  margin-bottom: 1em;
+}
+
+#user-display {
+  max-width: 400px;
+}
