@@ -4,7 +4,7 @@
   "description": "A webserver to manage data for my streams",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app/index.js"
   },
   "author": "Zephyr Snow",
   "license": "GPL-3.0-or-later",
@@ -12,5 +12,13 @@
     "cors": "^2.8.5",
     "express": "^4.18.3",
     "https": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.28",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.2",
+    "typescript-eslint": "^7.2.0"
   }
 }
